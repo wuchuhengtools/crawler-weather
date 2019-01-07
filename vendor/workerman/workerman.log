@@ -1,0 +1,1098 @@
+2019-01-03 13:04:00 pid:15306 Workerman[queue.php] start in DAEMON mode
+2019-01-03 13:04:06 pid:15314 Workerman[start.php] start in DAEMON mode
+2019-01-03 13:37:53 pid:16020 Workerman[queue.php] stop 
+2019-01-03 13:37:53 pid:16020 Workerman[queue.php] is stopping ...
+2019-01-03 13:37:53 pid:15308 Workerman[queue.php] stopping ...
+2019-01-03 13:37:53 pid:15308 Workerman[queue.php] has been stopped
+2019-01-03 13:37:53 pid:16020 Workerman[queue.php] stop success
+2019-01-03 13:38:01 pid:15319 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(275): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(115): Beanbun\Lib\Client->count('qiubaiQueue')
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(82): Beanbun\Queue\MemoryQueue->count()
+#3 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(350): Beanbun\Queue\MemoryQueue->add(NULL, NULL)
+#4 [internal function]: Beanbun\Beanbun->crawler()
+#5 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(167): call_user_func_array(Array, Array)
+#6 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#7 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#8 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Event->loop()
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#14 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#15 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#16 {main}
+2019-01-03 13:38:01 pid:15319 Worker[15319] process terminated
+2019-01-03 13:38:01 pid:15318 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(275): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(115): Beanbun\Lib\Client->count('qiubaiQueue')
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(82): Beanbun\Queue\MemoryQueue->count()
+#3 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(350): Beanbun\Queue\MemoryQueue->add(NULL, NULL)
+#4 [internal function]: Beanbun\Beanbun->crawler()
+#5 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(167): call_user_func_array(Array, Array)
+#6 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#7 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#8 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Event->loop()
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#14 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#15 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#16 {main}
+2019-01-03 13:38:01 pid:15318 Worker[15318] process terminated
+2019-01-03 13:38:01 pid:15321 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(275): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(115): Beanbun\Lib\Client->count('qiubaiQueue')
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(82): Beanbun\Queue\MemoryQueue->count()
+#3 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(350): Beanbun\Queue\MemoryQueue->add(NULL, NULL)
+#4 [internal function]: Beanbun\Beanbun->crawler()
+#5 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(167): call_user_func_array(Array, Array)
+#6 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#7 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#8 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Event->loop()
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#14 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#15 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#16 {main}
+2019-01-03 13:38:01 pid:15321 Worker[15321] process terminated
+2019-01-03 13:38:01 pid:15317 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(275): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(115): Beanbun\Lib\Client->count('qiubaiQueue')
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(82): Beanbun\Queue\MemoryQueue->count()
+#3 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(350): Beanbun\Queue\MemoryQueue->add(NULL, NULL)
+#4 [internal function]: Beanbun\Beanbun->crawler()
+#5 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(167): call_user_func_array(Array, Array)
+#6 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#7 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#8 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Event->loop()
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#14 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#15 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#16 {main}
+2019-01-03 13:38:01 pid:15317 Worker[15317] process terminated
+2019-01-03 13:38:01 pid:15320 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(275): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(115): Beanbun\Lib\Client->count('qiubaiQueue')
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(82): Beanbun\Queue\MemoryQueue->count()
+#3 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(350): Beanbun\Queue\MemoryQueue->add(NULL, NULL)
+#4 [internal function]: Beanbun\Beanbun->crawler()
+#5 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(167): call_user_func_array(Array, Array)
+#6 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#7 /home/wuchuheng/project/worker/vendor/workerman/workerman/Events/Event.php(195): EventBase->loop()
+#8 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Event->loop()
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#13 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#14 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#15 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#16 {main}
+2019-01-03 13:38:01 pid:15320 Worker[15320] process terminated
+2019-01-03 13:38:01 pid:15316 worker[qiubai:15320] exit with status 64000
+2019-01-03 13:38:01 pid:15316 worker[qiubai:15319] exit with status 64000
+2019-01-03 13:38:01 pid:15316 worker[qiubai:15317] exit with status 64000
+2019-01-03 13:38:01 pid:15316 worker[qiubai:15321] exit with status 64000
+2019-01-03 13:38:01 pid:15316 worker[qiubai:15318] exit with status 64000
+2019-01-03 13:38:01 pid:16028 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:01 pid:16029 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:01 pid:16030 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:01 pid:16031 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:01 pid:16032 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:02 pid:16028 Worker[16028] process terminated
+2019-01-03 13:38:02 pid:16029 Worker[16029] process terminated
+2019-01-03 13:38:02 pid:16030 Worker[16030] process terminated
+2019-01-03 13:38:02 pid:15316 worker[qiubai:16030] exit with status 64000
+2019-01-03 13:38:02 pid:16031 Worker[16031] process terminated
+2019-01-03 13:38:02 pid:16032 Worker[16032] process terminated
+2019-01-03 13:38:02 pid:15316 worker[qiubai:16028] exit with status 64000
+2019-01-03 13:38:02 pid:15316 worker[qiubai:16029] exit with status 64000
+2019-01-03 13:38:02 pid:15316 worker[qiubai:16031] exit with status 64000
+2019-01-03 13:38:02 pid:15316 worker[qiubai:16032] exit with status 64000
+2019-01-03 13:38:02 pid:16034 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:02 pid:16035 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:02 pid:16033 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:02 pid:16036 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:02 pid:16037 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:03 pid:16034 Worker[16034] process terminated
+2019-01-03 13:38:03 pid:16035 Worker[16035] process terminated
+2019-01-03 13:38:03 pid:16033 Worker[16033] process terminated
+2019-01-03 13:38:03 pid:15316 worker[qiubai:16033] exit with status 64000
+2019-01-03 13:38:03 pid:16036 Worker[16036] process terminated
+2019-01-03 13:38:03 pid:16037 Worker[16037] process terminated
+2019-01-03 13:38:03 pid:15316 worker[qiubai:16037] exit with status 64000
+2019-01-03 13:38:03 pid:15316 worker[qiubai:16035] exit with status 64000
+2019-01-03 13:38:03 pid:15316 worker[qiubai:16036] exit with status 64000
+2019-01-03 13:38:03 pid:15316 worker[qiubai:16034] exit with status 64000
+2019-01-03 13:38:03 pid:16038 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:03 pid:16039 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:03 pid:16040 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:03 pid:16041 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:03 pid:16042 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:04 pid:16038 Worker[16038] process terminated
+2019-01-03 13:38:04 pid:16039 Worker[16039] process terminated
+2019-01-03 13:38:04 pid:16040 Worker[16040] process terminated
+2019-01-03 13:38:04 pid:16041 Worker[16041] process terminated
+2019-01-03 13:38:04 pid:15316 worker[qiubai:16041] exit with status 64000
+2019-01-03 13:38:04 pid:16042 Worker[16042] process terminated
+2019-01-03 13:38:04 pid:15316 worker[qiubai:16039] exit with status 64000
+2019-01-03 13:38:04 pid:15316 worker[qiubai:16038] exit with status 64000
+2019-01-03 13:38:04 pid:15316 worker[qiubai:16042] exit with status 64000
+2019-01-03 13:38:04 pid:15316 worker[qiubai:16040] exit with status 64000
+2019-01-03 13:38:05 pid:16043 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:05 pid:16044 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:05 pid:16045 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:05 pid:16046 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:05 pid:16047 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:06 pid:16043 Worker[16043] process terminated
+2019-01-03 13:38:06 pid:16044 Worker[16044] process terminated
+2019-01-03 13:38:06 pid:15316 worker[qiubai:16043] exit with status 64000
+2019-01-03 13:38:06 pid:16045 Worker[16045] process terminated
+2019-01-03 13:38:06 pid:16046 Worker[16046] process terminated
+2019-01-03 13:38:06 pid:16047 Worker[16047] process terminated
+2019-01-03 13:38:06 pid:15316 worker[qiubai:16047] exit with status 64000
+2019-01-03 13:38:06 pid:15316 worker[qiubai:16044] exit with status 64000
+2019-01-03 13:38:06 pid:15316 worker[qiubai:16045] exit with status 64000
+2019-01-03 13:38:06 pid:15316 worker[qiubai:16046] exit with status 64000
+2019-01-03 13:38:06 pid:16048 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:06 pid:16049 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:06 pid:16050 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:06 pid:16051 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:06 pid:16052 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:07 pid:16048 Worker[16048] process terminated
+2019-01-03 13:38:07 pid:16049 Worker[16049] process terminated
+2019-01-03 13:38:07 pid:16050 Worker[16050] process terminated
+2019-01-03 13:38:07 pid:16051 Worker[16051] process terminated
+2019-01-03 13:38:07 pid:16052 Worker[16052] process terminated
+2019-01-03 13:38:07 pid:15316 worker[qiubai:16050] exit with status 64000
+2019-01-03 13:38:07 pid:15316 worker[qiubai:16051] exit with status 64000
+2019-01-03 13:38:07 pid:15316 worker[qiubai:16049] exit with status 64000
+2019-01-03 13:38:07 pid:15316 worker[qiubai:16052] exit with status 64000
+2019-01-03 13:38:07 pid:15316 worker[qiubai:16048] exit with status 64000
+2019-01-03 13:38:07 pid:16055 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:07 pid:16053 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:07 pid:16054 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:07 pid:16056 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:07 pid:16057 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16055 Worker[16055] process terminated
+2019-01-03 13:38:08 pid:16053 Worker[16053] process terminated
+2019-01-03 13:38:08 pid:16054 Worker[16054] process terminated
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16054] exit with status 64000
+2019-01-03 13:38:08 pid:16056 Worker[16056] process terminated
+2019-01-03 13:38:08 pid:16057 Worker[16057] process terminated
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16055] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16053] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16056] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16057] exit with status 64000
+2019-01-03 13:38:08 pid:16058 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16059 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16060 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16061 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16062 Exception: Connection refused in /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php:66
+Stack trace:
+#0 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Lib/Client.php(193): Beanbun\Lib\Client->getConnection('qiubaiQueue')
+#1 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Queue/MemoryQueue.php(60): Beanbun\Lib\Client->add('qiubaiQueue', Array)
+#2 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(283): Beanbun\Queue\MemoryQueue->__construct(Array)
+#3 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Array)
+#4 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(272): call_user_func(Object(Closure), Array)
+#5 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(216): Beanbun\Beanbun->queue()
+#6 [internal function]: Beanbun\Beanbun->Beanbun\{closure}(Object(Beanbun\Beanbun))
+#7 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(265): call_user_func(Object(Closure), Object(Beanbun\Beanbun))
+#8 [internal function]: Beanbun\Beanbun->onWorkerStart(Object(Workerman\Worker))
+#9 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#10 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wuchuheng/project/worker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(81): Workerman\Worker::runAll()
+#17 /home/wuchuheng/project/worker/vendor/kiddyu/beanbun/src/Beanbun.php(150): Beanbun\Beanbun::run()
+#18 /home/wuchuheng/project/worker/start.php(24): Beanbun\Beanbun->start()
+#19 {main}
+2019-01-03 13:38:08 pid:16063 Workerman[start.php] stop 
+2019-01-03 13:38:08 pid:16063 Workerman[start.php] is stopping ...
+2019-01-03 13:38:08 pid:15316 Workerman[start.php] stopping ...
+2019-01-03 13:38:08 pid:16058 Worker[16058] process terminated
+2019-01-03 13:38:08 pid:16059 Worker[16059] process terminated
+2019-01-03 13:38:08 pid:16060 Worker[16060] process terminated
+2019-01-03 13:38:08 pid:16061 Worker[16061] process terminated
+2019-01-03 13:38:08 pid:16062 Worker[16062] process terminated
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16060] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16059] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16062] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16061] exit with status 64000
+2019-01-03 13:38:08 pid:15316 worker[qiubai:16058] exit with status 64000
+2019-01-03 13:38:08 pid:15316 Workerman[start.php] has been stopped
+2019-01-03 13:38:08 pid:16063 Workerman[start.php] stop success
+2019-01-03 13:39:29 pid:16084 Workerman[queue.php] start in DAEMON mode
+2019-01-03 13:39:37 pid:16089 Workerman[queue.php] status 
+2019-01-03 13:39:51 pid:16091 Workerman[queue.php] stop 
+2019-01-03 13:39:51 pid:16091 Workerman[queue.php] is stopping ...
+2019-01-03 13:39:51 pid:16086 Workerman[queue.php] stopping ...
+2019-01-03 13:39:51 pid:16086 Workerman[queue.php] has been stopped
+2019-01-03 13:39:51 pid:16091 Workerman[queue.php] stop success
+2019-01-03 13:39:53 pid:16092 Workerman[queue.php] status 
+2019-01-03 13:39:53 pid:16092 Workerman[queue.php] not run
+2019-01-03 13:40:01 pid:16101 Workerman[queue.php] status 
+2019-01-03 13:40:01 pid:16101 Workerman[queue.php] not run
+2019-01-03 13:40:05 pid:16104 Workerman[queue.php] start in DAEMON mode
+2019-01-03 13:40:09 pid:16108 Workerman[queue.php] status 
+2019-01-03 13:40:23 pid:16112 Workerman[queue.php] status 
+2019-01-03 13:40:31 pid:16113 Workerman[start.php] start in DAEMON mode
+2019-01-03 13:40:36 pid:16122 Workerman[start.php] status 
+2019-01-03 13:40:56 pid:16129 Workerman[start.php] status 
+2019-01-03 13:41:15 pid:16138 Workerman[start.php] status 
+2019-01-04 13:44:46 pid:32319 Workerman[start.php] status 
+2019-01-04 13:44:55 pid:32323 Workerman[start.php] stop 
+2019-01-04 13:44:55 pid:32323 Workerman[start.php] is stopping ...
+2019-01-04 13:44:55 pid:16115 Workerman[start.php] stopping ...
+2019-01-04 13:44:55 pid:16115 Workerman[start.php] has been stopped
+2019-01-04 13:44:55 pid:32323 Workerman[start.php] stop success
+2019-01-04 13:58:05 pid:32498 Workerman[start.php] start in DAEMON mode
+2019-01-04 13:58:57 pid:32531 Workerman[start.php] stop 
+2019-01-04 13:58:57 pid:32531 Workerman[start.php] is stopping ...
+2019-01-04 13:58:57 pid:32500 Workerman[start.php] stopping ...
+2019-01-04 13:58:57 pid:32500 Workerman[start.php] has been stopped
+2019-01-04 13:58:57 pid:32531 Workerman[start.php] stop success
+2019-01-04 13:59:02 pid:32536 Workerman[start.php] start in DAEMON mode
+2019-01-04 13:59:39 pid:32564 Workerman[start.php] stop 
+2019-01-04 13:59:39 pid:32564 Workerman[start.php] is stopping ...
+2019-01-04 13:59:39 pid:32538 Workerman[start.php] stopping ...
+2019-01-04 13:59:39 pid:32538 Workerman[start.php] has been stopped
+2019-01-04 13:59:39 pid:32564 Workerman[start.php] stop success
+2019-01-04 13:59:48 pid:32565 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:00:11 pid:32604 Workerman[start.php] stop 
+2019-01-04 14:00:11 pid:32604 Workerman[start.php] is stopping ...
+2019-01-04 14:00:11 pid:32567 Workerman[start.php] stopping ...
+2019-01-04 14:00:11 pid:32567 Workerman[start.php] has been stopped
+2019-01-04 14:00:11 pid:32604 Workerman[start.php] stop success
+2019-01-04 14:02:30 pid:32657 Workerman[start.php] status 
+2019-01-04 14:02:30 pid:32657 Workerman[start.php] not run
+2019-01-04 14:02:34 pid:32659 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:06:18 pid:32726 Workerman[start.php] stop 
+2019-01-04 14:06:18 pid:32726 Workerman[start.php] is stopping ...
+2019-01-04 14:06:18 pid:32661 Workerman[start.php] stopping ...
+2019-01-04 14:06:18 pid:32661 Workerman[start.php] has been stopped
+2019-01-04 14:06:18 pid:32726 Workerman[start.php] stop success
+2019-01-04 14:06:29 pid:32733 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:07:35 pid:32760 Workerman[start.php] stop 
+2019-01-04 14:07:35 pid:32760 Workerman[start.php] is stopping ...
+2019-01-04 14:07:35 pid:32735 Workerman[start.php] stopping ...
+2019-01-04 14:07:35 pid:32735 Workerman[start.php] has been stopped
+2019-01-04 14:07:35 pid:32760 Workerman[start.php] stop success
+2019-01-04 14:09:56 pid:333 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:19:47 pid:458 Workerman[start.php] stop 
+2019-01-04 14:19:47 pid:458 Workerman[start.php] is stopping ...
+2019-01-04 14:19:47 pid:335 Workerman[start.php] stopping ...
+2019-01-04 14:19:47 pid:335 Workerman[start.php] has been stopped
+2019-01-04 14:19:47 pid:458 Workerman[start.php] stop success
+2019-01-04 14:19:52 pid:459 Workerman[queue.php] stop 
+2019-01-04 14:19:52 pid:459 Workerman[queue.php] is stopping ...
+2019-01-04 14:19:52 pid:16106 Workerman[queue.php] stopping ...
+2019-01-04 14:19:52 pid:16106 Workerman[queue.php] has been stopped
+2019-01-04 14:19:52 pid:459 Workerman[queue.php] stop success
+2019-01-04 14:20:44 pid:492 Workerman[queue.php] start in DAEMON mode
+2019-01-04 14:20:48 pid:496 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:22:59 pid:553 Workerman[start.php] stop 
+2019-01-04 14:22:59 pid:553 Workerman[start.php] is stopping ...
+2019-01-04 14:22:59 pid:498 Workerman[start.php] stopping ...
+2019-01-04 14:22:59 pid:498 Workerman[start.php] has been stopped
+2019-01-04 14:22:59 pid:553 Workerman[start.php] stop success
+2019-01-04 14:23:05 pid:558 Workerman[queue.php] stop 
+2019-01-04 14:23:05 pid:558 Workerman[queue.php] is stopping ...
+2019-01-04 14:23:05 pid:494 Workerman[queue.php] stopping ...
+2019-01-04 14:23:05 pid:494 Workerman[queue.php] has been stopped
+2019-01-04 14:23:05 pid:558 Workerman[queue.php] stop success
+2019-01-04 14:28:52 pid:638 Workerman[queue.php] stop 
+2019-01-04 14:28:52 pid:638 Workerman[queue.php] not run
+2019-01-04 14:35:47 pid:746 Workerman[queue.php] start in DAEMON mode
+2019-01-04 14:35:52 pid:750 Workerman[start.php] start in DAEMON mode
+2019-01-04 14:38:03 pid:926 Workerman[start.php] stop 
+2019-01-04 14:38:03 pid:926 Workerman[start.php] is stopping ...
+2019-01-04 14:38:03 pid:752 Workerman[start.php] stopping ...
+2019-01-04 14:38:03 pid:752 Workerman[start.php] has been stopped
+2019-01-04 14:38:03 pid:926 Workerman[start.php] stop success
+2019-01-04 14:38:08 pid:927 Workerman[queue.php] stop 
+2019-01-04 14:38:08 pid:927 Workerman[queue.php] is stopping ...
+2019-01-04 14:38:08 pid:748 Workerman[queue.php] stopping ...
+2019-01-04 14:38:08 pid:748 Workerman[queue.php] has been stopped
+2019-01-04 14:38:08 pid:927 Workerman[queue.php] stop success
+2019-01-06 13:57:06 pid:31533 Workerman[queue.php] status 
+2019-01-06 13:57:06 pid:31533 Workerman[queue.php] not run
+2019-01-06 13:57:09 pid:31534 Workerman[queue.php] start in DAEMON mode
+2019-01-06 13:57:13 pid:31539 Workerman[start.php] start in DAEMON mode
+2019-01-06 16:10:00 pid:1875 Workerman[start.php] stop 
+2019-01-06 16:10:00 pid:1875 Workerman[start.php] is stopping ...
+2019-01-06 16:10:00 pid:31541 Workerman[start.php] stopping ...
+2019-01-06 16:10:00 pid:31541 Workerman[start.php] has been stopped
+2019-01-06 16:10:00 pid:1875 Workerman[start.php] stop success
+2019-01-06 16:10:04 pid:1885 Workerman[queue.php] stop 
+2019-01-06 16:10:04 pid:1885 Workerman[queue.php] is stopping ...
+2019-01-06 16:10:04 pid:31536 Workerman[queue.php] stopping ...
+2019-01-06 16:10:04 pid:31536 Workerman[queue.php] has been stopped
+2019-01-06 16:10:04 pid:1885 Workerman[queue.php] stop success
+2019-01-06 16:10:22 pid:1889 Workerman[queue.php] start in DAEMON mode
+2019-01-06 16:10:26 pid:1894 Workerman[start.php] start in DAEMON mode
+2019-01-06 16:43:00 pid:2426 Workerman[start.php] start in DAEMON mode
+2019-01-06 16:43:00 pid:2426 Workerman[start.php] already running
+2019-01-06 16:43:45 pid:2456 Workerman[start.php] status 
+2019-01-06 16:47:36 pid:2539 Workerman[start.php] stop 
+2019-01-06 16:47:36 pid:2539 Workerman[start.php] is stopping ...
+2019-01-06 16:47:36 pid:1896 Workerman[start.php] stopping ...
+2019-01-06 16:47:36 pid:1896 Workerman[start.php] has been stopped
+2019-01-06 16:47:36 pid:2539 Workerman[start.php] stop success
+2019-01-06 16:47:50 pid:2545 Workerman[queue.php] start in DAEMON mode
+2019-01-06 16:47:50 pid:2545 Workerman[queue.php] already running
+2019-01-06 16:48:25 pid:2564 Workerman[start.php] start in DAEMON mode
+2019-01-06 16:56:41 pid:2698 Workerman[start.php] stop 
+2019-01-06 16:56:41 pid:2698 Workerman[start.php] is stopping ...
+2019-01-06 16:56:41 pid:2566 Workerman[start.php] stopping ...
+2019-01-06 16:56:41 pid:2566 Workerman[start.php] has been stopped
+2019-01-06 16:56:41 pid:2698 Workerman[start.php] stop success
+2019-01-06 16:56:45 pid:2699 Workerman[queue.php] stop 
+2019-01-06 16:56:45 pid:2699 Workerman[queue.php] is stopping ...
+2019-01-06 16:56:45 pid:1891 Workerman[queue.php] stopping ...
+2019-01-06 16:56:45 pid:1891 Workerman[queue.php] has been stopped
+2019-01-06 16:56:45 pid:2699 Workerman[queue.php] stop success
+2019-01-06 16:57:20 pid:2718 Workerman[queue.php] start in DAEMON mode
+2019-01-06 16:57:25 pid:2722 Workerman[start.php] start in DAEMON mode
+2019-01-06 16:57:56 pid:2753 Workerman[start.php] stop 
+2019-01-06 16:57:56 pid:2753 Workerman[start.php] is stopping ...
+2019-01-06 16:57:56 pid:2724 Workerman[start.php] stopping ...
+2019-01-06 16:57:56 pid:2724 Workerman[start.php] has been stopped
+2019-01-06 16:57:56 pid:2753 Workerman[start.php] stop success
+2019-01-06 17:00:23 pid:2842 Workerman[start.php] start in DAEMON mode
+2019-01-07 22:45:36 pid:13595 Workerman[start.php] start in DAEMON mode
+2019-01-07 22:47:40 pid:13650 Workerman[start.php] start in DAEMON mode
+2019-01-07 22:47:40 pid:13650 Workerman[start.php] already running
