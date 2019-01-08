@@ -12,6 +12,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
  *
  */
 function getProxies($beanbun) {
+    $proxies = [];
     $client = new \GuzzleHttp\Client();
     for ($i = 1; $i <= 5; $i++) {
         $url = "https://www.kuaidaili.com/free/inha/{$i}";
@@ -31,7 +32,7 @@ function getProxies($beanbun) {
                         'proxy'   =>$proxy,
                         'timeout' => 6,
                     ]);
-                    $beanbun->proxies[] = $proxy;
+                    $proxies[] = $proxy;
                     echo "$proxy \t success.\n";
                 } catch (\Exception $e) {
                     echo "error.\n";
@@ -40,28 +41,25 @@ function getProxies($beanbun) {
             }
         }
     }
+    //过虑不能访问的ip
+    if (isset($beanbun->proxies) && count($beanbun->proxies) > 0) {
+        foreach($beanbun->proxies as $proxy){
+            try {
+                $proxy = $ip . ":" . $port;
+                $client->get('http://www.weather.com.cn/', [
+                    'proxy'   =>$proxy,
+                    'timeout' => 6,
+                ]);
+                $proxies[] = $proxy;
+                echo "$proxy \t success.\n";
+            } catch (\Exception $e) {
+                echo "error.\n";
+            }
+        } 
+    }
+    $beanbun->proxies = $proxies;
     //去重复
     if ($beanbun->proxies) $beanbun->proxies = array_unique($beanbun->proxies); 
-}
-
-
-/**
- *
- *
- *
- *
- */
-function unicode_decode($unistr, $encoding = 'utf-8', $prefix = '&#', $postfix = ';') {
-    $arruni = explode($prefix, $unistr);
-    $unistr = '';
-    for ($i = 1, $len = count($arruni); $i < $len; $i++) {
-        if (strlen($postfix) > 0) {
-            $arruni[$i] = substr($arruni[$i], 0, strlen($arruni[$i]) - strlen($postfix));
-        }
-        $temp = intval($arruni[$i]);
-        $unistr .= ($temp < 256) ? chr(0) . chr($temp) : chr($temp / 256) . chr($temp % 256);
-    }
-    return iconv('UCS-2', $encoding, $unistr);
 }
 
 
@@ -70,7 +68,7 @@ $beanbun = new Beanbun;
 $beanbun->name = '中国天气';
 $beanbun->count = 10;
 /* $beanbun->seed = 'http://www.weather.com.cn/'; */ 
-$beanbun->seed = 'http://www.weather.com.cn/weather1d/101280801.shtml'; 
+$beanbun->seed = 'http://www.weather.com.cn/weather1d/101280101.shtml'; 
 $beanbun->max = 0;  //无限制页面数量  
 $beanbun->logFile = __DIR__ . '/weather_access.log';
 $beanbun->urlFilter = [
@@ -85,12 +83,12 @@ $beanbun->setQueue('redis', [
     'port' => '6379'
 ]);
 
-
 if ($argv[1] == 'start') getProxies($beanbun);
 $beanbun->startWorker = function($beanbun) {
     // 每隔半小时，更新一下代理池
     Beanbun::timer(1800, 'getProxies', $beanbun);
 };
+
 
 //爬取前
 $beanbun->beforeDownloadPage = function ($beanbun) {
@@ -118,18 +116,27 @@ $beanbun->afterDownloadPage = function($beanbun) {
     if(strlen($beanbun->page) < 6000 )
     {
         $beanbun->queue()->add($beanbun->url);
+        $beanbun->log('to download data was failed '.$beanbun->url);
         $beanbun->error();
     }
-
     //当天气象数据抽取
     if (preg_match('/weather1d/', $beanbun->url)) {
+        //详情
         $crawler = new Crawler();
         $crawler->addHtmlContent($beanbun->page);
-        $tmp     = $crawler->filterXPath("//*[@id='today']/script/text()")->text(); 
-        $tmp     = substr($tmp, 15);
-        $tmp     = iconv('Unicode','GBK',$tmp); 
-        $tmp     = json_decode($tmp);    
-        var_dump($tmp);
+        $hasData     = $crawler->filterXPath("//*[@id='today']/script/text()")->text(); 
+        if (strlen($hasData) === 0){
+            $beanbun->log('【error】 Did`t get the data of  one day ');
+            $beanbun->error();
+        }
+        preg_match('/{.+}/', html_entity_decode($hasData), $html2Json);
+        $html2Data = json_decode($html2Json[0], true);
+        //位置名
+        //这里生成地点关系写表
+        $  = $crawler->filterXPath('//*[@id="today"]/div[1]/div/div[2]/h2/span/text()')->text(); 
+        
+        var_dump($hasData);exit;
+        
     } 
       
 };
