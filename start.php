@@ -3,10 +3,21 @@
 use Beanbun\Beanbun;
 use Beanbun\Lib\Helper;
 use Symfony\Component\DomCrawler\Crawler;
+use Beanbun\Lib\Db;
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
-
+Db::$config = [
+    'zhihu' => [
+        'server' => '127.0.0.1',
+        'port' => '3306',
+        'username' => 'root',
+        'password' => '123456',
+        'database_name' => 'weather',
+        'database_type' => 'mysql',
+        'charset' => 'utf8',
+    ]
+];
 /**
  *  @info ip代理池
  *
@@ -72,7 +83,8 @@ $beanbun->seed = 'http://www.weather.com.cn/weather1d/101280101.shtml';
 $beanbun->max = 0;  //无限制页面数量  
 $beanbun->logFile = __DIR__ . '/weather_access.log';
 $beanbun->urlFilter = [
-    '/http:\/\/www.weather.com.cn\/weather1d\/[0-9]+.shtml/'
+    '/http:\/\/www.weather.com.cn\/weather1d\/[0-9]+.shtml/',
+    '/http:\/\/forecast.weather.com.cn\/town\/weather1dn\/[0-9].shtml/',
 ];
 
 
@@ -83,7 +95,7 @@ $beanbun->setQueue('redis', [
     'port' => '6379'
 ]);
 
-if ($argv[1] == 'start') getProxies($beanbun);
+if (isset($argv[1]) && $argv[1] == 'start') getProxies($beanbun);
 $beanbun->startWorker = function($beanbun) {
     // 每隔半小时，更新一下代理池
     Beanbun::timer(1800, 'getProxies', $beanbun);
@@ -119,6 +131,7 @@ $beanbun->afterDownloadPage = function($beanbun) {
         $beanbun->log('to download data was failed '.$beanbun->url);
         $beanbun->error();
     }
+
     //当天气象数据抽取
     if (preg_match('/weather1d/', $beanbun->url)) {
         //详情
@@ -131,12 +144,45 @@ $beanbun->afterDownloadPage = function($beanbun) {
         }
         preg_match('/{.+}/', html_entity_decode($hasData), $html2Json);
         $html2Data = json_decode($html2Json[0], true);
+       // var_dump($html2Data);exit;
         //位置名
-        //这里生成地点关系写表
-        $  = $crawler->filterXPath('//*[@id="today"]/div[1]/div/div[2]/h2/span/text()')->text(); 
-        
-        var_dump($hasData);exit;
-        
+        $location  = $crawler->filterXPath('//*[@id="today"]/div[1]/div/div[2]/h2/span/text()')->text(); 
+        for ($i=1; $i<=5; $i++) {
+            try{
+                $data['url']  = $crawler->filterXPath("//div[@class='crumbs fl']/a[$i]/@href")->text();
+                $data['name']    = $crawler->filterXPath("//div[@class='crumbs fl']/a[$i]/text()")->text();
+                preg_match_all('/weather.*\/(.+)\.shtml/', $data['url'], $catch);
+                if (isset($catch[1][0])) {
+                    $data['id']   = $catch[1][0];
+                    $data['pid']  = $pid;
+                    $pid          = $catch[1][0] ;
+                    $data['path'] = $path;
+                    $path        .=  '-' . $pid;
+                }else{
+                    preg_match_all('/:\/\/(.+)\.weather\.com\.cn/', $data['url'], $getProvince); 
+                    $data['id']   = end($getProvince[1]);
+                    $data['pid']  = 0;
+                    $data['path'] = 0;
+                    $pid          = end($getProvince[1]);
+                    $path         = end($getProvince[1]);
+                }
+            }catch(\EXCEPTION $e){
+
+            }
+        }
+        //入库
+        Db::instance('weather')->select("city", [
+            "id",
+            "name",
+            "pid",
+            "path",
+            "url"
+        ], [
+            "id[>]" => 0 
+        ]);
+        exit;
+
+
     } 
       
 };
